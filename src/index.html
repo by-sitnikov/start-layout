@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+@include('partials/head.html')
+<body class="page__body">
+  <div class="wrapper">
+    @include('partials/header.html')
+    <main class="main">
+      <picture>
+        <source srcset="img/cover.avif" type="image/avif">
+        <source srcset="img/cover.webp" type="image/webp">
+        <img loading="lazy" src="img/cover.png" class="image" width="300" height="300" alt="Обложка ForestWeb">
+      </picture>
+    </main>
+    @include('partials/footer.html')
+  </div>
+
+  @include('partials/scripts.html')
+</body>
+
+</html>
